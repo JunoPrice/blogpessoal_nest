@@ -19,7 +19,7 @@ import { UsuarioModule } from './usuario/usuario.module';
       database: 'db_blogpessoal',
       entities: [Postagem, Tema, Usuario],
       synchronize: true,
-      logging: true,
+      //logging: true, //Essa linha serve para mostrar os comandos SQL gerados pelo Nest no Console
     }),
     PostagemModule,
     TemaModule,
