@@ -5,9 +5,9 @@ import { TemaController } from './controllers/tema.controller';
 import { TemaService } from './services/tema.service';
 
 @Module({
-    imports: [TypeOrmModule.forFeature([Tema])],
-    controllers: [TemaController],
-    providers: [TemaService],
-    exports: [TypeOrmModule, TemaService],
+  imports: [TypeOrmModule.forFeature([Tema])],
+  controllers: [TemaController],
+  providers: [TemaService],
+  exports: [TypeOrmModule, TemaService],
 })
 export class TemaModule {}
